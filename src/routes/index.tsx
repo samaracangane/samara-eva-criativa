@@ -173,7 +173,7 @@ function Index() {
             ].map(([k, v]) => (
               <div key={k} className="rounded-2xl border bg-card p-5">
                 <dt className="font-semibold text-primary">{k}</dt>
-                <dd className="mt-1">{v ?? <Pending>{k.toLowerCase()}</Pending>}</dd>
+                <dd className="mt-1">{v ?? <Pending>{String(k).toLowerCase()}</Pending>}</dd>
               </div>
             ))}
           </dl>
