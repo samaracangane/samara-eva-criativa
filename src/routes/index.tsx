@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { FileText, FolderOpen, Layers, ChevronDown } from "lucide-react";
 import hero from "@/assets/hero.jpg";
 import { Header, Footer, BuyButton, Pending, ConsentBanner } from "@/components/site";
+import { Testimonials } from "@/components/Testimonials";
 import {
   PLANS, ESSENCIAL_ITEMS, COMPLETO_EXTRA, GALLERY_IMAGES, FILE_FORMAT, DELIVERY_INFO, SUPPORT_CONTACT,
 } from "@/config/site";
@@ -160,6 +161,8 @@ function Index() {
             ) : <p className="text-center"><Pending>a comparação aparece quando o conteúdo de cada kit for definido</Pending></p>}
           </div>
         </Section>
+
+        <Testimonials />
 
         <Section title="Transparência">
           <dl className="mx-auto grid max-w-4xl gap-4 sm:grid-cols-2">
